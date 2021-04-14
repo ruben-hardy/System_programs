@@ -19,7 +19,7 @@ def _test(cmd="ipconfig"):
                 print "Executed using Subprocess.Popen"
                 return 0
             elif int(choice) == 3:
-                continue
+                break
         except NameError, ValueError:
             print "Input only numbers"
 
