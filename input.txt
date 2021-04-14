@@ -1,0 +1,63 @@
+Assumptions and Instruction
+Assumptions before running the script:
+1. Physically all components are present
+2. The connections are well established 
+3. The OV is not reporting any error 
+4. User well aware how to work on OneView manually
+5. SAN switch is added to OneView and required SANs are discovered in OV
+6. Ethernet conncetions are available to ICMs and ethernet switches are configured as TOR script only perform FC\FCoE cofniguration 
+7. For 3PAR, make sure web server API service is enabled so it can be imported to OV successfully. 
+Instructions:
+1. Every step required to create a server profile, is kept in EXCEL tabs in a sequential manner from Left to Right, please fill accordingly 
+2. Details filled in Excel should not have conflicts like IP details etc,.
+3. Try to fill all the details in each tab like SAN manager, Storage, Ethernet network from left to right. More details below
+
+Enclosure Details
+1) Add required enclosure details
+2) Add Storage System(3PAR only) details if 3PAR is needed for configuration. 
+3) Select appropriate OV version
+4) If you are doing BFS and need LUN, define the required storage pool value and associate SAN with it.
+5) For creating FC\FCoE network VSAN will be needed, same has to be defined under Associated SAN section, no need to define storage pool in this scenario. 
+
+Ethernet Network sheet
+1) Provide a unique name for the network to be created.
+2) For a tagged network, provide the VLAN id.
+3) Supported network type- Tagged and Untagged
+4) User can provide custom speed for networks.
+
+Fibre(FC-FCoE) sheet
+1) Provide a unique name for the network to be created.
+2) For creating FCoE network, VLAN is mandatory input. VSAN should be provided when using for active configuration
+3) For creating FC network, VSAN is necessary.
+4)Don’t add VSAN manually in this sheet. VSAN should be added in Enclosure details sheet under Associated VSAN. Once that is done you will see the same VSAN as drop down in this sheet. 
+
+LIG sheet
+1) The name of each LIG should be unique.
+2) Select the interconnect type from the dropdown available.
+3) Select the redundancy type from the dropdown available
+4) From the options available in the dropdown, select the proper interconnect bay set.
+5) Provide only FC connections to Carbon interconnect module 
+6) Only LIG support is applicable for Natasha interconnects. 
+7) For each interconnect type, select different LIG field.
+
+EG and LE sheet
+1) Enter a unique name for the enclosure group and provide the proper enclosure count. Enter 1 for single enclosure and 3 or 5(depending on the number) for multiple enclosure
+2) Select DHCP as addressing mode from the dropdown.
+3) Enter a unique name for the logical enclosure. 
+3) If LIG is needed for Carbon and Natasha select the same from drop down "For 16GB FC and 12 GB SAS" and select the correct enclosure number for respective ICMs. 
+4)Select firmware flashing and force install as NO, this feature is not supported currently. However is added in excel due to shared nature of code and it might be needed by BIT team for development. 
+
+Server profile sheet
+1) Server profiles can be created with or without BFS feature.
+2) For BFS feature, boot LUN should be created.
+3) Provide unique names for each server profile.
+4) Server profile with multiple connections can be created.
+5) Multiple server profiles with multiple connections can be created.
+6) Enclosure details should be provided in the first sheet: Enclosure details
+7) Select the enclosure from the dropdown available(as entered in the first sheet)
+8) Select the boot mode and affinity type from the dropdown menu.
+9) HideUnusedFlexNics should be true always.
+10) Provide unique connection name for the profile. Multiple connections can also be created
+11) For BFS feature, create boot LUN and enter the lun size.
+12) Select the storage system and storage pool for the LUN from the dropdown. Storage system and storage pool details should be entered in the first sheet.
+13) Select the OS type from the dropdown.

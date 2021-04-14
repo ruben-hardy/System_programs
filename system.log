@@ -1,0 +1,38 @@
+2017-11-30 19:59:48,821 - main - INFO - This is info
+2017-11-30 19:59:48,821 - main - INFO - This is debug
+2017-11-30 20:00:21,392 - main - INFO - This is info
+2017-11-30 20:00:21,392 - main - INFO - This is debug
+2017-11-30 20:00:21,392 - main - INFO - This is bullshit
+2017-11-30 20:00:21,392 - main - INFO - This 568154 plus this 68655 is 636809
+2017-11-30 20:00:21,392 - main - INFO - This is crap
+2017-11-30 20:00:21,392 - main - ERROR - This is error
+2017-11-30 20:05:15,379 - main - INFO - This is info
+2017-11-30 20:05:15,379 - main - INFO - This is debug
+2017-11-30 20:05:15,379 - main.secondary - INFO - This is bullshit
+2017-11-30 20:05:15,379 - main.secondary - INFO - This 568154 plus this 68655 is 636809
+2017-11-30 20:05:15,379 - main.secondary - INFO - This is crap
+2017-11-30 20:05:15,389 - main - ERROR - This is error
+2017-11-30 20:05:38,979 - main - INFO - This is info
+2017-11-30 20:05:38,979 - main - INFO - This is debug
+2017-11-30 20:05:38,979 - main - ERROR - This is error
+2017-11-30 20:05:58,811 - main - INFO - This is info
+2017-11-30 20:05:58,811 - main - INFO - This is debug
+2017-11-30 20:05:58,811 - main - ERROR - This is error
+2017-11-30 20:06:32,749 - main - INFO - This is info
+2017-11-30 20:06:32,749 - main - INFO - This is debug
+2017-11-30 20:06:32,749 - main.secondary - INFO - This is bullshit is unbelivable
+2017-11-30 20:06:32,749 - main.secondary - INFO - This 568154 plus this 68655 is 636809
+2017-11-30 20:06:32,749 - main.secondary - INFO - This is crap
+2017-11-30 20:06:32,749 - main - ERROR - This is error
+2017-11-30 20:10:32,615 - main - INFO - This is info
+2017-11-30 20:10:32,615 - main - INFO - This is debug
+2017-11-30 20:10:32,615 - main.secondary - INFO - This bullshit is unbelievable
+2017-11-30 20:10:32,625 - main.secondary - INFO - This 568154 plus this 68655 is 636809
+2017-11-30 20:10:32,625 - main.secondary - INFO - This is crap
+2017-11-30 20:10:32,625 - main - ERROR - This is error
+2017-12-01 15:46:12,547 - main - INFO - This is info
+2017-12-01 15:46:12,557 - main - INFO - This is debug
+2017-12-01 15:46:12,557 - main.secondary - INFO - This bullshit is unbelievable
+2017-12-01 15:46:12,557 - main.secondary - INFO - This 568154 plus this 68655 is 636809
+2017-12-01 15:46:12,557 - main.secondary - INFO - This is crap
+2017-12-01 15:46:12,557 - main - ERROR - This is error
