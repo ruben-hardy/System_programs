@@ -1,2 +1,2 @@
-# mypython
-Basic programs I wrote in python for practice
+# Python_system_programs
+Repo contains python system programming scripts and programs.
